@@ -1,15 +1,14 @@
 module apb_interface (
+    input  wire        PCLK,
+    input  wire        PRST_n,
+    input  wire        PSEL_i2c,
+    input  wire        PEN,
+    input  wire        PWRITE,
+    input  wire [31:0] PADDR,
+    input  wire [31:0] PWDATA,
+    output reg  [31:0] PRDATA_I2C,
+    output reg         PREADY_i2c,
 
-    input  wire        pclk,
-    input  wire        presetn,
-    input  wire        psel,
-    input  wire        penable,
-    input  wire        pwrite,
-    input  wire [7:0]  paddr,
-    input  wire [7:0]  pwdata,
-    output reg  [7:0]  prdata,
-
-   
     output reg         write_enable,
     output reg         read_enable,
     output reg  [7:0]  address,
@@ -17,22 +16,21 @@ module apb_interface (
     input  wire [7:0]  rdata
 );
 
-//reg
+wire access = PSEL_i2c & PEN;
 
-
-always@(posedge pclk or negedge presetn)
-begin
-	if(!presetn)
-	begin
-	
-	end
-	else
-	begin
-	
-	end
+always @(*) begin
+    write_enable = access & PWRITE;
+    read_enable  = access & ~PWRITE;
+    address      = PADDR[7:0];   
+    wdata        = PWDATA[7:0];
 end
 
+always @(*) begin
+    PREADY_i2c = access;
+end
 
-
+always @(*) begin
+    PRDATA_I2C = {24'b0, rdata};
+end
 
 endmodule

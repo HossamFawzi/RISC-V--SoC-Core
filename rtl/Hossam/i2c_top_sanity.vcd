@@ -1,0 +1,1982 @@
+$date
+	Mon Sep 07 09:37:35 2026
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module i2c_top_sanity_tb $end
+$var reg 1 ! PCLK $end
+$var reg 1 " PRST_n $end
+$var reg 1 # PSEL_i2c $end
+$var reg 1 $ PEN $end
+$var reg 1 % PWRITE $end
+$var reg 32 & PADDR [31:0] $end
+$var reg 32 ' PWDATA [31:0] $end
+$var wire 1 ( PRDATA_I2C [31] $end
+$var wire 1 ) PRDATA_I2C [30] $end
+$var wire 1 * PRDATA_I2C [29] $end
+$var wire 1 + PRDATA_I2C [28] $end
+$var wire 1 , PRDATA_I2C [27] $end
+$var wire 1 - PRDATA_I2C [26] $end
+$var wire 1 . PRDATA_I2C [25] $end
+$var wire 1 / PRDATA_I2C [24] $end
+$var wire 1 0 PRDATA_I2C [23] $end
+$var wire 1 1 PRDATA_I2C [22] $end
+$var wire 1 2 PRDATA_I2C [21] $end
+$var wire 1 3 PRDATA_I2C [20] $end
+$var wire 1 4 PRDATA_I2C [19] $end
+$var wire 1 5 PRDATA_I2C [18] $end
+$var wire 1 6 PRDATA_I2C [17] $end
+$var wire 1 7 PRDATA_I2C [16] $end
+$var wire 1 8 PRDATA_I2C [15] $end
+$var wire 1 9 PRDATA_I2C [14] $end
+$var wire 1 : PRDATA_I2C [13] $end
+$var wire 1 ; PRDATA_I2C [12] $end
+$var wire 1 < PRDATA_I2C [11] $end
+$var wire 1 = PRDATA_I2C [10] $end
+$var wire 1 > PRDATA_I2C [9] $end
+$var wire 1 ? PRDATA_I2C [8] $end
+$var wire 1 @ PRDATA_I2C [7] $end
+$var wire 1 A PRDATA_I2C [6] $end
+$var wire 1 B PRDATA_I2C [5] $end
+$var wire 1 C PRDATA_I2C [4] $end
+$var wire 1 D PRDATA_I2C [3] $end
+$var wire 1 E PRDATA_I2C [2] $end
+$var wire 1 F PRDATA_I2C [1] $end
+$var wire 1 G PRDATA_I2C [0] $end
+$var wire 1 H PREADY_i2c $end
+$var reg 1 I sda_in $end
+$var wire 1 J sda_out $end
+$scope task apb_write $end
+$var reg 8 K addr [7:0] $end
+$var reg 8 L data [7:0] $end
+$upscope $end
+$scope module dut $end
+$var wire 1 M PCLK $end
+$var wire 1 N PRST_n $end
+$var wire 1 O PSEL_i2c $end
+$var wire 1 P PEN $end
+$var wire 1 Q PWRITE $end
+$var wire 1 R PADDR [31] $end
+$var wire 1 S PADDR [30] $end
+$var wire 1 T PADDR [29] $end
+$var wire 1 U PADDR [28] $end
+$var wire 1 V PADDR [27] $end
+$var wire 1 W PADDR [26] $end
+$var wire 1 X PADDR [25] $end
+$var wire 1 Y PADDR [24] $end
+$var wire 1 Z PADDR [23] $end
+$var wire 1 [ PADDR [22] $end
+$var wire 1 \ PADDR [21] $end
+$var wire 1 ] PADDR [20] $end
+$var wire 1 ^ PADDR [19] $end
+$var wire 1 _ PADDR [18] $end
+$var wire 1 ` PADDR [17] $end
+$var wire 1 a PADDR [16] $end
+$var wire 1 b PADDR [15] $end
+$var wire 1 c PADDR [14] $end
+$var wire 1 d PADDR [13] $end
+$var wire 1 e PADDR [12] $end
+$var wire 1 f PADDR [11] $end
+$var wire 1 g PADDR [10] $end
+$var wire 1 h PADDR [9] $end
+$var wire 1 i PADDR [8] $end
+$var wire 1 j PADDR [7] $end
+$var wire 1 k PADDR [6] $end
+$var wire 1 l PADDR [5] $end
+$var wire 1 m PADDR [4] $end
+$var wire 1 n PADDR [3] $end
+$var wire 1 o PADDR [2] $end
+$var wire 1 p PADDR [1] $end
+$var wire 1 q PADDR [0] $end
+$var wire 1 r PWDATA [31] $end
+$var wire 1 s PWDATA [30] $end
+$var wire 1 t PWDATA [29] $end
+$var wire 1 u PWDATA [28] $end
+$var wire 1 v PWDATA [27] $end
+$var wire 1 w PWDATA [26] $end
+$var wire 1 x PWDATA [25] $end
+$var wire 1 y PWDATA [24] $end
+$var wire 1 z PWDATA [23] $end
+$var wire 1 { PWDATA [22] $end
+$var wire 1 | PWDATA [21] $end
+$var wire 1 } PWDATA [20] $end
+$var wire 1 ~ PWDATA [19] $end
+$var wire 1 !! PWDATA [18] $end
+$var wire 1 "! PWDATA [17] $end
+$var wire 1 #! PWDATA [16] $end
+$var wire 1 $! PWDATA [15] $end
+$var wire 1 %! PWDATA [14] $end
+$var wire 1 &! PWDATA [13] $end
+$var wire 1 '! PWDATA [12] $end
+$var wire 1 (! PWDATA [11] $end
+$var wire 1 )! PWDATA [10] $end
+$var wire 1 *! PWDATA [9] $end
+$var wire 1 +! PWDATA [8] $end
+$var wire 1 ,! PWDATA [7] $end
+$var wire 1 -! PWDATA [6] $end
+$var wire 1 .! PWDATA [5] $end
+$var wire 1 /! PWDATA [4] $end
+$var wire 1 0! PWDATA [3] $end
+$var wire 1 1! PWDATA [2] $end
+$var wire 1 2! PWDATA [1] $end
+$var wire 1 3! PWDATA [0] $end
+$var wire 1 ( PRDATA_I2C [31] $end
+$var wire 1 ) PRDATA_I2C [30] $end
+$var wire 1 * PRDATA_I2C [29] $end
+$var wire 1 + PRDATA_I2C [28] $end
+$var wire 1 , PRDATA_I2C [27] $end
+$var wire 1 - PRDATA_I2C [26] $end
+$var wire 1 . PRDATA_I2C [25] $end
+$var wire 1 / PRDATA_I2C [24] $end
+$var wire 1 0 PRDATA_I2C [23] $end
+$var wire 1 1 PRDATA_I2C [22] $end
+$var wire 1 2 PRDATA_I2C [21] $end
+$var wire 1 3 PRDATA_I2C [20] $end
+$var wire 1 4 PRDATA_I2C [19] $end
+$var wire 1 5 PRDATA_I2C [18] $end
+$var wire 1 6 PRDATA_I2C [17] $end
+$var wire 1 7 PRDATA_I2C [16] $end
+$var wire 1 8 PRDATA_I2C [15] $end
+$var wire 1 9 PRDATA_I2C [14] $end
+$var wire 1 : PRDATA_I2C [13] $end
+$var wire 1 ; PRDATA_I2C [12] $end
+$var wire 1 < PRDATA_I2C [11] $end
+$var wire 1 = PRDATA_I2C [10] $end
+$var wire 1 > PRDATA_I2C [9] $end
+$var wire 1 ? PRDATA_I2C [8] $end
+$var wire 1 @ PRDATA_I2C [7] $end
+$var wire 1 A PRDATA_I2C [6] $end
+$var wire 1 B PRDATA_I2C [5] $end
+$var wire 1 C PRDATA_I2C [4] $end
+$var wire 1 D PRDATA_I2C [3] $end
+$var wire 1 E PRDATA_I2C [2] $end
+$var wire 1 F PRDATA_I2C [1] $end
+$var wire 1 G PRDATA_I2C [0] $end
+$var wire 1 H PREADY_i2c $end
+$var wire 1 4! sda_in $end
+$var wire 1 J sda_out $end
+$var wire 1 5! write_enable $end
+$var wire 1 6! read_enable $end
+$var wire 1 7! reg_address [7] $end
+$var wire 1 8! reg_address [6] $end
+$var wire 1 9! reg_address [5] $end
+$var wire 1 :! reg_address [4] $end
+$var wire 1 ;! reg_address [3] $end
+$var wire 1 <! reg_address [2] $end
+$var wire 1 =! reg_address [1] $end
+$var wire 1 >! reg_address [0] $end
+$var wire 1 ?! reg_wdata [7] $end
+$var wire 1 @! reg_wdata [6] $end
+$var wire 1 A! reg_wdata [5] $end
+$var wire 1 B! reg_wdata [4] $end
+$var wire 1 C! reg_wdata [3] $end
+$var wire 1 D! reg_wdata [2] $end
+$var wire 1 E! reg_wdata [1] $end
+$var wire 1 F! reg_wdata [0] $end
+$var wire 1 G! reg_rdata [7] $end
+$var wire 1 H! reg_rdata [6] $end
+$var wire 1 I! reg_rdata [5] $end
+$var wire 1 J! reg_rdata [4] $end
+$var wire 1 K! reg_rdata [3] $end
+$var wire 1 L! reg_rdata [2] $end
+$var wire 1 M! reg_rdata [1] $end
+$var wire 1 N! reg_rdata [0] $end
+$var wire 1 O! div_value [7] $end
+$var wire 1 P! div_value [6] $end
+$var wire 1 Q! div_value [5] $end
+$var wire 1 R! div_value [4] $end
+$var wire 1 S! div_value [3] $end
+$var wire 1 T! div_value [2] $end
+$var wire 1 U! div_value [1] $end
+$var wire 1 V! div_value [0] $end
+$var wire 1 W! data_tx [7] $end
+$var wire 1 X! data_tx [6] $end
+$var wire 1 Y! data_tx [5] $end
+$var wire 1 Z! data_tx [4] $end
+$var wire 1 [! data_tx [3] $end
+$var wire 1 \! data_tx [2] $end
+$var wire 1 ]! data_tx [1] $end
+$var wire 1 ^! data_tx [0] $end
+$var wire 1 _! start $end
+$var wire 1 `! rw_mode $end
+$var wire 1 a! data_rx [7] $end
+$var wire 1 b! data_rx [6] $end
+$var wire 1 c! data_rx [5] $end
+$var wire 1 d! data_rx [4] $end
+$var wire 1 e! data_rx [3] $end
+$var wire 1 f! data_rx [2] $end
+$var wire 1 g! data_rx [1] $end
+$var wire 1 h! data_rx [0] $end
+$var wire 1 i! ack $end
+$var wire 1 j! nack $end
+$var wire 1 k! busy $end
+$var wire 1 l! direction $end
+$var wire 1 m! enable $end
+$var wire 1 n! load $end
+$var wire 1 o! scl $end
+$var wire 1 p! tx_done $end
+$var wire 1 q! rx_done $end
+$scope module u_apb_interface $end
+$var wire 1 M PCLK $end
+$var wire 1 N PRST_n $end
+$var wire 1 O PSEL_i2c $end
+$var wire 1 P PEN $end
+$var wire 1 Q PWRITE $end
+$var wire 1 R PADDR [31] $end
+$var wire 1 S PADDR [30] $end
+$var wire 1 T PADDR [29] $end
+$var wire 1 U PADDR [28] $end
+$var wire 1 V PADDR [27] $end
+$var wire 1 W PADDR [26] $end
+$var wire 1 X PADDR [25] $end
+$var wire 1 Y PADDR [24] $end
+$var wire 1 Z PADDR [23] $end
+$var wire 1 [ PADDR [22] $end
+$var wire 1 \ PADDR [21] $end
+$var wire 1 ] PADDR [20] $end
+$var wire 1 ^ PADDR [19] $end
+$var wire 1 _ PADDR [18] $end
+$var wire 1 ` PADDR [17] $end
+$var wire 1 a PADDR [16] $end
+$var wire 1 b PADDR [15] $end
+$var wire 1 c PADDR [14] $end
+$var wire 1 d PADDR [13] $end
+$var wire 1 e PADDR [12] $end
+$var wire 1 f PADDR [11] $end
+$var wire 1 g PADDR [10] $end
+$var wire 1 h PADDR [9] $end
+$var wire 1 i PADDR [8] $end
+$var wire 1 j PADDR [7] $end
+$var wire 1 k PADDR [6] $end
+$var wire 1 l PADDR [5] $end
+$var wire 1 m PADDR [4] $end
+$var wire 1 n PADDR [3] $end
+$var wire 1 o PADDR [2] $end
+$var wire 1 p PADDR [1] $end
+$var wire 1 q PADDR [0] $end
+$var wire 1 r PWDATA [31] $end
+$var wire 1 s PWDATA [30] $end
+$var wire 1 t PWDATA [29] $end
+$var wire 1 u PWDATA [28] $end
+$var wire 1 v PWDATA [27] $end
+$var wire 1 w PWDATA [26] $end
+$var wire 1 x PWDATA [25] $end
+$var wire 1 y PWDATA [24] $end
+$var wire 1 z PWDATA [23] $end
+$var wire 1 { PWDATA [22] $end
+$var wire 1 | PWDATA [21] $end
+$var wire 1 } PWDATA [20] $end
+$var wire 1 ~ PWDATA [19] $end
+$var wire 1 !! PWDATA [18] $end
+$var wire 1 "! PWDATA [17] $end
+$var wire 1 #! PWDATA [16] $end
+$var wire 1 $! PWDATA [15] $end
+$var wire 1 %! PWDATA [14] $end
+$var wire 1 &! PWDATA [13] $end
+$var wire 1 '! PWDATA [12] $end
+$var wire 1 (! PWDATA [11] $end
+$var wire 1 )! PWDATA [10] $end
+$var wire 1 *! PWDATA [9] $end
+$var wire 1 +! PWDATA [8] $end
+$var wire 1 ,! PWDATA [7] $end
+$var wire 1 -! PWDATA [6] $end
+$var wire 1 .! PWDATA [5] $end
+$var wire 1 /! PWDATA [4] $end
+$var wire 1 0! PWDATA [3] $end
+$var wire 1 1! PWDATA [2] $end
+$var wire 1 2! PWDATA [1] $end
+$var wire 1 3! PWDATA [0] $end
+$var reg 32 r! PRDATA_I2C [31:0] $end
+$var reg 1 s! PREADY_i2c $end
+$var reg 1 t! write_enable $end
+$var reg 1 u! read_enable $end
+$var reg 8 v! address [7:0] $end
+$var reg 8 w! wdata [7:0] $end
+$var wire 1 G! rdata [7] $end
+$var wire 1 H! rdata [6] $end
+$var wire 1 I! rdata [5] $end
+$var wire 1 J! rdata [4] $end
+$var wire 1 K! rdata [3] $end
+$var wire 1 L! rdata [2] $end
+$var wire 1 M! rdata [1] $end
+$var wire 1 N! rdata [0] $end
+$var wire 1 x! access $end
+$upscope $end
+$scope module u_register_file $end
+$var parameter 8 y! ADDR_DIV_VALUE $end
+$var parameter 8 z! ADDR_DATA_TX $end
+$var parameter 8 {! ADDR_DATA_RX $end
+$var parameter 8 |! ADDR_START $end
+$var parameter 8 }! ADDR_RW_MODE $end
+$var parameter 8 ~! ADDR_STATUS $end
+$var wire 1 M pclk $end
+$var wire 1 N presetn $end
+$var wire 1 5! write_enable $end
+$var wire 1 6! read_enable $end
+$var wire 1 7! address [7] $end
+$var wire 1 8! address [6] $end
+$var wire 1 9! address [5] $end
+$var wire 1 :! address [4] $end
+$var wire 1 ;! address [3] $end
+$var wire 1 <! address [2] $end
+$var wire 1 =! address [1] $end
+$var wire 1 >! address [0] $end
+$var wire 1 ?! wdata [7] $end
+$var wire 1 @! wdata [6] $end
+$var wire 1 A! wdata [5] $end
+$var wire 1 B! wdata [4] $end
+$var wire 1 C! wdata [3] $end
+$var wire 1 D! wdata [2] $end
+$var wire 1 E! wdata [1] $end
+$var wire 1 F! wdata [0] $end
+$var reg 8 !" rdata [7:0] $end
+$var reg 8 "" div_value [7:0] $end
+$var reg 8 #" data_tx [7:0] $end
+$var reg 1 $" start $end
+$var reg 1 %" rw_mode $end
+$var wire 1 a! data_rx [7] $end
+$var wire 1 b! data_rx [6] $end
+$var wire 1 c! data_rx [5] $end
+$var wire 1 d! data_rx [4] $end
+$var wire 1 e! data_rx [3] $end
+$var wire 1 f! data_rx [2] $end
+$var wire 1 g! data_rx [1] $end
+$var wire 1 h! data_rx [0] $end
+$var wire 1 i! ack $end
+$var wire 1 j! nack $end
+$var wire 1 k! busy $end
+$upscope $end
+$scope module u_i2c_fsm $end
+$var parameter 4 &" IDLE $end
+$var parameter 4 '" START $end
+$var parameter 4 (" ADDRESS $end
+$var parameter 4 )" ACK_ADDR $end
+$var parameter 4 *" DATA_TX $end
+$var parameter 4 +" ACK_DATA_TX $end
+$var parameter 4 ," DATA_RX $end
+$var parameter 4 -" ACK_DATA_RX $end
+$var parameter 4 ." STOP $end
+$var wire 1 M sys_clk $end
+$var wire 1 o! scl $end
+$var wire 1 N rst $end
+$var wire 1 q! rx_done $end
+$var wire 1 p! tx_done $end
+$var wire 1 a! data_rx [7] $end
+$var wire 1 b! data_rx [6] $end
+$var wire 1 c! data_rx [5] $end
+$var wire 1 d! data_rx [4] $end
+$var wire 1 e! data_rx [3] $end
+$var wire 1 f! data_rx [2] $end
+$var wire 1 g! data_rx [1] $end
+$var wire 1 h! data_rx [0] $end
+$var wire 1 _! start $end
+$var wire 1 `! rw_mode $end
+$var reg 1 /" direction $end
+$var reg 1 0" enable $end
+$var reg 1 1" load $end
+$var reg 1 2" ack $end
+$var reg 1 3" nack $end
+$var wire 1 k! busy $end
+$var reg 4 4" current_state [3:0] $end
+$var reg 4 5" next_state [3:0] $end
+$var reg 4 6" state_scl_sync [3:0] $end
+$upscope $end
+$scope module u_clock_generator $end
+$var wire 1 M sys_clk $end
+$var wire 1 N rst $end
+$var wire 1 m! enable $end
+$var wire 1 O! div_value [7] $end
+$var wire 1 P! div_value [6] $end
+$var wire 1 Q! div_value [5] $end
+$var wire 1 R! div_value [4] $end
+$var wire 1 S! div_value [3] $end
+$var wire 1 T! div_value [2] $end
+$var wire 1 U! div_value [1] $end
+$var wire 1 V! div_value [0] $end
+$var reg 1 7" scl $end
+$var reg 8 8" counter [7:0] $end
+$upscope $end
+$scope module u_shift_reg $end
+$var wire 1 o! scl $end
+$var wire 1 N rst $end
+$var wire 1 W! data_in [7] $end
+$var wire 1 X! data_in [6] $end
+$var wire 1 Y! data_in [5] $end
+$var wire 1 Z! data_in [4] $end
+$var wire 1 [! data_in [3] $end
+$var wire 1 \! data_in [2] $end
+$var wire 1 ]! data_in [1] $end
+$var wire 1 ^! data_in [0] $end
+$var wire 1 4! sda_in $end
+$var wire 1 l! direction $end
+$var wire 1 m! enable $end
+$var wire 1 n! load $end
+$var reg 8 9" data_out [7:0] $end
+$var reg 1 :" rx_done $end
+$var reg 1 ;" tx_done $end
+$var reg 1 <" sda_out $end
+$var reg 8 =" tx_buffer [7:0] $end
+$var reg 3 >" bit_count [2:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+b0 &
+b0 '
+0I
+b0 r!
+0s!
+0t!
+0u!
+b0 v!
+b0 w!
+b0 !"
+b0 ""
+b0 #"
+0$"
+0%"
+0/"
+00"
+01"
+02"
+03"
+b0 4"
+b0 5"
+b0 6"
+07"
+b0 8"
+b0 9"
+0:"
+0;"
+0<"
+b0 ="
+b0 >"
+bx K
+bx L
+b0 y!
+b1 z!
+b10 {!
+b11 |!
+b100 }!
+b101 ~!
+b0 &"
+b1 '"
+b10 ("
+b11 )"
+b100 *"
+b101 +"
+b110 ,"
+b111 -"
+b1000 ."
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0H
+0J
+05!
+06!
+0>!
+0=!
+0<!
+0;!
+0:!
+09!
+08!
+07!
+0F!
+0E!
+0D!
+0C!
+0B!
+0A!
+0@!
+0?!
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0V!
+0U!
+0T!
+0S!
+0R!
+0Q!
+0P!
+0O!
+0^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+0W!
+0_!
+0`!
+0h!
+0g!
+0f!
+0e!
+0d!
+0c!
+0b!
+0a!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+0q!
+0x!
+04!
+03!
+02!
+01!
+00!
+0/!
+0.!
+0-!
+0,!
+0+!
+0*!
+0)!
+0(!
+0'!
+0&!
+0%!
+0$!
+0#!
+0"!
+0!!
+0~
+0}
+0|
+0{
+0z
+0y
+0x
+0w
+0v
+0u
+0t
+0s
+0r
+0q
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+$end
+#5000
+1!
+1M
+#10000
+0!
+0M
+#12000
+1"
+b0 K
+b1000 L
+1N
+#15000
+1!
+1M
+1#
+1%
+b1000 '
+1O
+1Q
+10!
+b1000 w!
+1C!
+#20000
+0!
+0M
+#25000
+1!
+1M
+1$
+1P
+1x!
+1t!
+1s!
+15!
+1H
+#30000
+0!
+0M
+#35000
+1!
+1M
+0#
+0$
+b1 K
+b10100101 L
+0O
+0P
+0x!
+0t!
+0s!
+05!
+0H
+b1000 ""
+1S!
+b1000 !"
+1K!
+b1000 r!
+1D
+#40000
+0!
+0M
+#45000
+1!
+1M
+1#
+b1 &
+b10100101 '
+1O
+13!
+11!
+00!
+1.!
+1,!
+1q
+b1 v!
+b10100101 w!
+1F!
+1D!
+0C!
+1A!
+1?!
+1>!
+b0 !"
+0K!
+b0 r!
+0D
+#50000
+0!
+0M
+#55000
+1!
+1M
+1$
+1P
+1x!
+1t!
+1s!
+15!
+1H
+#60000
+0!
+0M
+#65000
+1!
+1M
+0#
+0$
+b100 K
+b1 L
+0O
+0P
+0x!
+0t!
+0s!
+05!
+0H
+b10100101 #"
+1^!
+1\!
+1Y!
+1W!
+b10100101 !"
+1N!
+1L!
+1I!
+1G!
+b10100101 r!
+1G
+1E
+1B
+1@
+#70000
+0!
+0M
+#75000
+1!
+1M
+1#
+b100 &
+b1 '
+1O
+01!
+0.!
+0,!
+0q
+1o
+b100 v!
+b1 w!
+0D!
+0A!
+0?!
+0>!
+1<!
+b0 !"
+0N!
+0L!
+0I!
+0G!
+b0 r!
+0G
+0E
+0B
+0@
+#80000
+0!
+0M
+#85000
+1!
+1M
+1$
+1P
+1x!
+1t!
+1s!
+15!
+1H
+#90000
+0!
+0M
+#95000
+1!
+1M
+0#
+0$
+b11 K
+0O
+0P
+0x!
+0t!
+0s!
+05!
+0H
+1%"
+1`!
+b1 !"
+1N!
+b1 r!
+1G
+#100000
+0!
+0M
+#105000
+1!
+1M
+1#
+b11 &
+1O
+1q
+1p
+0o
+b11 v!
+1>!
+1=!
+0<!
+b0 !"
+0N!
+b0 r!
+0G
+#110000
+0!
+0M
+#115000
+1!
+1M
+1$
+1P
+1x!
+1t!
+1s!
+15!
+1H
+#120000
+0!
+0M
+#125000
+1!
+1M
+0#
+0$
+0O
+0P
+0x!
+0t!
+0s!
+05!
+0H
+1$"
+1_!
+b1 5"
+#130000
+0!
+0M
+#135000
+1!
+1M
+0$"
+b1 4"
+0_!
+1k!
+10"
+b10 5"
+1m!
+#140000
+0!
+0M
+#145000
+1!
+1M
+b10 4"
+b1 8"
+00"
+10"
+1/"
+11"
+1l!
+1n!
+#150000
+0!
+0M
+#155000
+1!
+1M
+b10 8"
+#160000
+0!
+0M
+#165000
+1!
+1M
+b11 8"
+#170000
+0!
+0M
+#175000
+1!
+1M
+b100 8"
+#180000
+0!
+0M
+#185000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+b10 6"
+b10100101 ="
+0/"
+00"
+01"
+10"
+1/"
+0n!
+#190000
+0!
+0M
+#195000
+1!
+1M
+b1 8"
+#200000
+0!
+0M
+#205000
+1!
+1M
+b10 8"
+#210000
+0!
+0M
+#215000
+1!
+1M
+b11 8"
+#220000
+0!
+0M
+#225000
+1!
+1M
+b100 8"
+#230000
+0!
+0M
+#235000
+1!
+1M
+b101 8"
+07"
+b0 8"
+0o!
+#240000
+0!
+0M
+#245000
+1!
+1M
+b1 8"
+#250000
+0!
+0M
+#255000
+1!
+1M
+b10 8"
+#260000
+0!
+0M
+#265000
+1!
+1M
+b11 8"
+#270000
+0!
+0M
+#275000
+1!
+1M
+b100 8"
+#280000
+0!
+0M
+#285000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+1<"
+b1001010 ="
+b1 >"
+1J
+#290000
+0!
+0M
+#295000
+1!
+1M
+b1 8"
+#300000
+0!
+0M
+#305000
+1!
+1M
+b10 8"
+#310000
+0!
+0M
+#315000
+1!
+1M
+b11 8"
+#320000
+0!
+0M
+#325000
+1!
+1M
+b100 8"
+#330000
+0!
+0M
+#335000
+1!
+1M
+b101 8"
+07"
+b0 8"
+0o!
+#340000
+0!
+0M
+#345000
+1!
+1M
+b1 8"
+#350000
+0!
+0M
+#355000
+1!
+1M
+b10 8"
+#360000
+0!
+0M
+#365000
+1!
+1M
+b11 8"
+#370000
+0!
+0M
+#375000
+1!
+1M
+b100 8"
+#380000
+0!
+0M
+#385000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+0<"
+b10010100 ="
+b10 >"
+0J
+#390000
+0!
+0M
+#395000
+1!
+1M
+b1 8"
+#400000
+0!
+0M
+#405000
+1!
+1M
+b10 8"
+#410000
+0!
+0M
+#415000
+1!
+1M
+b11 8"
+#420000
+0!
+0M
+#425000
+1!
+1M
+b100 8"
+#430000
+0!
+0M
+#435000
+1!
+1M
+b101 8"
+07"
+b0 8"
+0o!
+#440000
+0!
+0M
+#445000
+1!
+1M
+b1 8"
+#450000
+0!
+0M
+#455000
+1!
+1M
+b10 8"
+#460000
+0!
+0M
+#465000
+1!
+1M
+b11 8"
+#470000
+0!
+0M
+#475000
+1!
+1M
+b100 8"
+#480000
+0!
+0M
+#485000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+1<"
+b101000 ="
+b11 >"
+1J
+#490000
+0!
+0M
+#495000
+1!
+1M
+b1 8"
+#500000
+0!
+0M
+#505000
+1!
+1M
+b10 8"
+#510000
+0!
+0M
+#515000
+1!
+1M
+b11 8"
+#520000
+0!
+0M
+#525000
+1!
+1M
+b100 8"
+#530000
+0!
+0M
+#535000
+1!
+1M
+b101 8"
+07"
+b0 8"
+0o!
+#540000
+0!
+0M
+#545000
+1!
+1M
+b1 8"
+#550000
+0!
+0M
+#555000
+1!
+1M
+b10 8"
+#560000
+0!
+0M
+#565000
+1!
+1M
+b11 8"
+#570000
+0!
+0M
+#575000
+1!
+1M
+b100 8"
+#580000
+0!
+0M
+#585000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+0<"
+b1010000 ="
+b100 >"
+0J
+#590000
+0!
+0M
+#595000
+1!
+1M
+b1 8"
+#600000
+0!
+0M
+#605000
+1!
+1M
+b10 8"
+#610000
+0!
+0M
+#615000
+1!
+1M
+b11 8"
+#620000
+0!
+0M
+#625000
+1!
+1M
+b100 8"
+#630000
+0!
+0M
+#635000
+1!
+1M
+b101 8"
+07"
+b0 8"
+0o!
+#640000
+0!
+0M
+#645000
+1!
+1M
+b1 8"
+#650000
+0!
+0M
+#655000
+1!
+1M
+b10 8"
+#660000
+0!
+0M
+#665000
+1!
+1M
+b11 8"
+#670000
+0!
+0M
+#675000
+1!
+1M
+b100 8"
+#680000
+0!
+0M
+#685000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+b10100000 ="
+b101 >"
+#690000
+0!
+0M
+#695000
+1!
+1M
+b1 8"
+#700000
+0!
+0M
+#705000
+1!
+1M
+b10 8"
+#710000
+0!
+0M
+#715000
+1!
+1M
+b11 8"
+#720000
+0!
+0M
+#725000
+1!
+1M
+b100 8"
+#730000
+0!
+0M
+#735000
+1!
+1M
+b101 8"
+07"
+b0 8"
+0o!
+#740000
+0!
+0M
+#745000
+1!
+1M
+b1 8"
+#750000
+0!
+0M
+#755000
+1!
+1M
+b10 8"
+#760000
+0!
+0M
+#765000
+1!
+1M
+b11 8"
+#770000
+0!
+0M
+#775000
+1!
+1M
+b100 8"
+#780000
+0!
+0M
+#785000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+1<"
+b1000000 ="
+b110 >"
+1J
+#790000
+0!
+0M
+#795000
+1!
+1M
+b1 8"
+#800000
+0!
+0M
+#805000
+1!
+1M
+b10 8"
+#810000
+0!
+0M
+#815000
+1!
+1M
+b11 8"
+#820000
+0!
+0M
+#825000
+1!
+1M
+b100 8"
+#830000
+0!
+0M
+#835000
+1!
+1M
+b101 8"
+07"
+b0 8"
+0o!
+#840000
+0!
+0M
+#845000
+1!
+1M
+b1 8"
+#850000
+0!
+0M
+#855000
+1!
+1M
+b10 8"
+#860000
+0!
+0M
+#865000
+1!
+1M
+b11 8"
+#870000
+0!
+0M
+#875000
+1!
+1M
+b100 8"
+#880000
+0!
+0M
+#885000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+0<"
+b10000000 ="
+b111 >"
+0J
+#890000
+0!
+0M
+#895000
+1!
+1M
+b1 8"
+#900000
+0!
+0M
+#905000
+1!
+1M
+b10 8"
+#910000
+0!
+0M
+#915000
+1!
+1M
+b11 8"
+#920000
+0!
+0M
+#925000
+1!
+1M
+b100 8"
+#930000
+0!
+0M
+#935000
+1!
+1M
+b101 8"
+07"
+b0 8"
+0o!
+#940000
+0!
+0M
+#945000
+1!
+1M
+b1 8"
+#950000
+0!
+0M
+#955000
+1!
+1M
+b10 8"
+#960000
+0!
+0M
+#965000
+1!
+1M
+b11 8"
+#970000
+0!
+0M
+#975000
+1!
+1M
+b100 8"
+#980000
+0!
+0M
+#985000
+1!
+1M
+b101 8"
+17"
+b0 8"
+1o!
+1<"
+b0 ="
+1;"
+b0 >"
+1J
+1p!
+b11 5"
+#990000
+0!
+0M
+#995000
+1!
+1M
+b11 4"
+b1 8"
+0/"
+00"
+10"
+b100 5"
+0l!
+#1000000
+0!
+0M
+#1005000
+1!
+1M
+b100 4"
+b10 8"
+00"
+10"
+1/"
+11"
+b101 5"
+1l!
+1n!
+#1010000
+0!
+0M
+#1015000
+1!
+1M
+b101 4"
+b11 8"
+0/"
+00"
+01"
+10"
+b1000 5"
+0l!
+0n!
+#1020000
+0!
+0M
+#1025000
+1!
+1M
+b1000 4"
+b100 8"
+00"
+b0 5"
+0m!
+#1030000
+0!
+0M
+#1035000
+1!
+1M
+b0 4"
+0k!
+#1040000
+0!
+0M
+#1045000
+1!
+1M
+#1050000
+0!
+0M
+#1055000
+1!
+1M
+#1060000
+0!
+0M
+#1065000
+1!
+1M
+#1070000
+0!
+0M
+#1075000
+1!
+1M
+#1080000
+0!
+0M
+#1085000
+1!
+1M
+#1090000
+0!
+0M
+#1095000
+1!
+1M
+#1100000
+0!
+0M
+#1105000
+1!
+1M
+#1110000
+0!
+0M
+#1115000
+1!
+1M
+#1120000
+0!
+0M
+#1125000
+1!
+1M
+#1130000
+0!
+0M
+#1135000
+1!
+1M
+#1140000
+0!
+0M
+#1145000
+1!
+1M
+#1150000
+0!
+0M
+#1155000
+1!
+1M
+#1160000
+0!
+0M
+#1165000
+1!
+1M
+#1170000
+0!
+0M
+#1175000
+1!
+1M
+#1180000
+0!
+0M
+#1185000
+1!
+1M
+#1190000
+0!
+0M
+#1195000
+1!
+1M
+#1200000
+0!
+0M
+#1205000
+1!
+1M
+#1210000
+0!
+0M
+#1215000
+1!
+1M
+#1220000
+0!
+0M
+#1225000
+1!
+1M
+#1230000
+0!
+0M
+#1235000
+1!
+1M
+#1240000
+0!
+0M
+#1245000
+1!
+1M
+#1250000
+0!
+0M
+#1255000
+1!
+1M
+#1260000
+0!
+0M
+#1265000
+1!
+1M
+#1270000
+0!
+0M
+#1275000
+1!
+1M
+#1280000
+0!
+0M
+#1285000
+1!
+1M
+#1290000
+0!
+0M
+#1295000
+1!
+1M
+#1300000
+0!
+0M
+#1305000
+1!
+1M
+#1310000
+0!
+0M
+#1315000
+1!
+1M
+#1320000
+0!
+0M
+#1325000
+1!
+1M
+#1330000
+0!
+0M
+#1335000
+1!
+1M
+#1340000
+0!
+0M
+#1345000
+1!
+1M
+#1350000
+0!
+0M
+#1355000
+1!
+1M
+#1360000
+0!
+0M
+#1365000
+1!
+1M
+#1370000
+0!
+0M
+#1375000
+1!
+1M
+#1380000
+0!
+0M
+#1385000
+1!
+1M
+#1390000
+0!
+0M
+#1395000
+1!
+1M
+#1400000
+0!
+0M
+#1405000
+1!
+1M
+#1410000
+0!
+0M
+#1415000
+1!
+1M
+#1420000
+0!
+0M
+#1425000
+1!
+1M
+#1430000
+0!
+0M
+#1435000
+1!
+1M
+#1440000
+0!
+0M
+#1445000
+1!
+1M
+#1450000
+0!
+0M
+#1455000
+1!
+1M
+#1460000
+0!
+0M
+#1465000
+1!
+1M
+#1470000
+0!
+0M
+#1475000
+1!
+1M
+#1480000
+0!
+0M
+#1485000
+1!
+1M
+#1490000
+0!
+0M
+#1495000
+1!
+1M
+#1500000
+0!
+0M
+#1505000
+1!
+1M
+#1510000
+0!
+0M
+#1515000
+1!
+1M
+#1520000
+0!
+0M
+#1525000
+1!
+1M
+#1530000
+0!
+0M
+#1535000
+1!
+1M
+#1540000
+0!
+0M
+#1545000
+1!
+1M
+#1550000
+0!
+0M
+#1555000
+1!
+1M
+#1560000
+0!
+0M
+#1565
